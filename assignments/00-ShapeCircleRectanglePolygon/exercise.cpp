@@ -1,6 +1,6 @@
 #include "Shape.hpp"
 #include "Circle.hpp"
-
+#include "Polygon.hpp"
 #include <iostream>
 
 int main() 
@@ -13,5 +13,8 @@ int main()
 
   std::cout << circulo1.draw() << " con valor en x: " << circulo1.getValueX() << " y valor en y en: " << circulo1.getValueY() << " con radio r: "<< circulo1.getRadio() << "\n";
 
+  Polygon poligono1{3,4,6};
+  std::cout << poligono1.draw() << " con valor en x: " << poligono1.getValueX() << " y valor en y en: " << poligono1.getValueY() << " con numero de lados: "<< poligono1.getSides() << "\n";
+  
   return 0;
 }
